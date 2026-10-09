@@ -1,0 +1,70 @@
+
+SOC INCIDENT RESPONSE PLAYBOOK
+Document Type: Demonstration Knowledge Source
+Version: 1.0
+
+1. SUSPICIOUS LOGIN
+When multiple failed login attempts or unusual login activity is detected:
+- Review authentication logs for failed and successful attempts.
+- Check the source IP address, login time and affected user account.
+- Verify whether the login activity is expected with the account owner or authorized team.
+- Check for unusual locations, devices or login patterns.
+- Escalate confirmed suspicious activity to the SOC analyst.
+- Consider account protection actions only with appropriate authorization.
+- Preserve authentication logs for investigation.
+
+2. MALWARE DETECTION
+When malware is detected on an endpoint:
+- Review endpoint detection alerts and malware classification.
+- Identify the affected host, user and detection timestamp.
+- Check for related processes, files, network connections and other affected systems.
+- Escalate suspected active malware incidents to the SOC analyst.
+- Isolate the affected endpoint only when authorized under incident procedures.
+- Preserve endpoint logs and relevant forensic evidence.
+- Confirm remediation and recovery with the responsible security team.
+
+3. SUSPICIOUS NETWORK TRAFFIC
+When unusual or potentially malicious network traffic is detected:
+- Identify the source and destination IP addresses.
+- Review destination ports, protocols, timestamps and traffic volume.
+- Compare indicators with approved threat intelligence sources.
+- Review firewall, DNS and network monitoring logs.
+- Determine whether other assets show similar activity.
+- Escalate potentially malicious communication for analyst review.
+- Preserve relevant network logs and investigation evidence.
+
+4. POSSIBLE DATA EXFILTRATION
+When unusual outbound data transfer is detected:
+- Identify the affected asset, destination and transfer volume.
+- Review network flow, proxy, firewall and access logs.
+- Check whether the transfer was approved and business-related.
+- Identify the data involved, where known, and assess potential sensitivity.
+- Escalate suspected unauthorized data transfer to the incident response team.
+- Preserve relevant logs and evidence.
+- Follow the organization's data breach and notification procedures if applicable.
+
+5. PRIVILEGE ESCALATION
+When unusual privilege changes or elevated access are detected:
+- Identify the account, system and privilege change.
+- Review access management and authentication logs.
+- Verify whether the change was approved through the change or access process.
+- Check for related suspicious activity and unauthorized account use.
+- Escalate unexplained privilege changes for analyst investigation.
+- Preserve access logs and approval evidence.
+- Remove or adjust access only through an authorized process.
+
+6. GENERAL INCIDENT HANDLING
+For all suspected security incidents:
+- Record the alert ID, event time, affected asset and alert source.
+- Preserve relevant logs and evidence.
+- Assess potential impact and urgency.
+- Document findings, uncertainties and actions taken.
+- Require human review for important incident decisions.
+- Ensure containment, eradication and recovery follow approved procedures.
+- Record the final decision and supporting rationale.
+- Review the incident for lessons learned.
+
+IMPORTANT
+This playbook is a demonstration knowledge source. It does not replace
+approved organizational policies, incident response plans or analyst
+judgment. All containment and remediation actions require authorization.
